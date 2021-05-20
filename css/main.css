@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Poppins&display=swap");
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: #242831;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+}
+
+header {
+  height: 5em;
+  width: 100vw;
+  background-color: #323844;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 1em 10em 0 10em;
+  text-align: right;
+}
+
+header #title-text {
+  font-size: 26px;
+  position: absolute;
+  left: 8.5em;
+  top: 30px;
+}
+
+header #title-text:before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: blue;
+  height: 20px;
+  width: 20px;
+  right: 40px;
+}
+
+header ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 5em 0 0;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+}
+
+.search {
+  position: absolute;
+  top: 15%;
+  display: block;
+  padding: 0 10em 0 10em;
+}
+
+.search form label {
+  display: block;
+  font-size: 26px;
+  line-height: 3em;
+}
+
+.search form [type="text"] {
+  height: 2.5em;
+  width: 70vw;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+section {
+  position: absolute;
+  top: 40%;
+  display: block;
+  padding: 0 10em 0 10em;
+}
+
+section h1 {
+  font-size: 26px;
+}
+
+section p {
+  font-family: "Lora", serif;
+}
+
+.container {
+  display: block;
+  display: -ms-inline-grid;
+  display: inline-grid;
+  grid-gap: 10px;
+  -ms-grid-columns: (100px)[2];
+      grid-template-columns: repeat(2, 100px);
+}
+/*# sourceMappingURL=main.css.map */

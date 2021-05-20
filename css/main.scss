@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Poppins&display=swap");
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+$color_1: #242831;
+$color_2: #323844;
+$color_3: #989898;
+$font_1: "Lora", serif;
+$font_2: "Poppins", sans-serif;
+$padding: 10em;
+$font_size_s: 20px;
+$font_size_l: 26px;
+
+body {
+  height: 100vh;
+  background-color: $color_1;
+  color: white;
+  font-family: $font_2;
+  font-size: 18px;
+}
+
+header {
+  height: 5em;
+  width: 100vw;
+  background-color: $color_2;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 1em $padding 0 $padding;
+  text-align: right;
+
+  #title-text {
+    font-size: $font_size_l;
+    position: absolute;
+    left: 8.5em;
+    top: 30px;
+  }
+
+  #title-text:before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: blue;
+    height: 20px;
+    width: 20px;
+    right: 40px;
+  }
+
+  ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 5em 0 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+.search {
+  position: absolute;
+  top: 15%;
+  display: block;
+  padding: 0 $padding 0 $padding;
+
+  form {
+    label {
+      display: block;
+      font-size: $font_size_l;
+      line-height: 3em;
+    }
+    [type="text"] {
+      height: 2.5em;
+      width: 70vw;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+    }
+  }
+}
+
+section {
+  position: absolute;
+  top: 40%;
+  display: block;
+  padding: 0 $padding 0 $padding;
+
+  h1 {
+    font-size: $font_size_l;
+  }
+
+  p {
+    font-family: $font_1;
+  }
+}
+
+.container {
+  display: block;
+  display: inline-grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(2, 100px);
+}
