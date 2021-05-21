@@ -5,8 +5,13 @@
     let json = await response.json()
     let index = Math.floor(Math.random() * json.results.length)
     console.log(json.results[index].id)
-    return gifInserter(json.results[index].id, 5)
+
+
+    return gifInserter(json.results[index].id, 8)
+
 })()
+
+
 function gifInserter(id, val) {
     const container = document.querySelector('#gif-container')
     for (let i = 0; i < val; i++) {
@@ -14,9 +19,9 @@ function gifInserter(id, val) {
         temp = document.createElement('div')
         temp.setAttribute('data-postid', id);
         temp.setAttribute('data-share-method', 'host');
-        temp.setAttribute('data-width', '150%');
+        temp.setAttribute('data-width', '100%');
         temp.setAttribute('data-aspect-ratio', '1.0');
-        temp.classList.add('tenor-gif-embed')
+        temp.classList.add('tenor-gif-embed');
         container.append(temp)
     }
 }

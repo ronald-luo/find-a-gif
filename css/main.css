@@ -90,11 +90,19 @@ section p {
 }
 
 .container {
-  display: block;
-  display: -ms-inline-grid;
-  display: inline-grid;
-  grid-gap: 10px;
-  -ms-grid-columns: (100px)[2];
-      grid-template-columns: repeat(2, 100px);
+  width: 1000px;
+}
+
+.container .gifs {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 30px;
+  -ms-grid-columns: (225px)[4];
+      grid-template-columns: repeat(4, 225px);
+}
+
+.container .gifs .tenor-gif-embed {
+  -webkit-clip-path: inset(0 0 0 0 round 5% 20% 0 10%);
+          clip-path: inset(0 0 0 0 round 5% 20% 0 10%);
 }
 /*# sourceMappingURL=main.css.map */
