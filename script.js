@@ -1,15 +1,12 @@
 (async function gifGenerator () {
     let keywords = 'Pepe Frog'
-
     let url = `https://g.tenor.com/v1/search?q=${keywords}&key=GQ3SG3REATHM&limit=8`
     let response = await fetch(url, {mode: 'cors'});
     let json = await response.json()
     let index = Math.floor(Math.random() * json.results.length)
     console.log(json.results[index].id)
     return gifInserter(json.results[index].id, 5)
-
 })()
-
 function gifInserter(id, val) {
     const container = document.querySelector('#gif-container')
     for (let i = 0; i < val; i++) {
