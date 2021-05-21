@@ -1,7 +1,7 @@
 (async () => {
     let keywords = 'Pepe Frog'
-    let url = `https://g.tenor.com/v1/search?q=${keywords}&key=LXE0T26PZYHT&limit=8`
-    let response = await fetch(url, {mode: 'cors'});
+    let url = `https://g.tenor.com/v1/search?q=${keywords}&key=02V4W1N2V9BZ&limit=8`
+    let response = await fetch(url, {mode: 'no-cors'});
     let json = await response.json()
     let index = Math.floor(Math.random() * json.results.length)
     console.log(json.results[index].id)
